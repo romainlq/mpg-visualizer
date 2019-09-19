@@ -6,7 +6,7 @@
     "statusLeague": 4,
     "currentUser": "authorized",
     "championship": 2,
-    "statusTeam": 2,
+    "statusTeam": 1,
     "leagueMode": 5,
     "budget": 127,
     "currentTeam": "mpg_team_L7BEBWY$$mpg_user_478953",
@@ -243,6 +243,17 @@
             "joinDate": "2015-07-01"
         },
         {
+            "id": "player_110735",
+            "lastname": "Webster",
+            "firstname": "Adam",
+            "position": 2,
+            "quotation": 9,
+            "ultraPosition": 20,
+            "club": "Brighton",
+            "teamid": "36",
+            "joinDate": "2019-08-03"
+        },
+        {
             "id": "player_111565",
             "lastname": "Lucas Piazon",
             "firstname": null,
@@ -255,8 +266,8 @@
         },
         {
             "id": "player_112516",
-            "lastname": "Brown",
-            "firstname": "Isaiah",
+            "lastname": "Isaiah Brown",
+            "firstname": null,
             "position": 4,
             "quotation": 6,
             "ultraPosition": 40,
@@ -351,6 +362,17 @@
             "club": "Newcastle",
             "teamid": "4",
             "joinDate": "2017-07-19"
+        },
+        {
+            "id": "player_115382",
+            "lastname": "Maupay",
+            "firstname": "Neal",
+            "position": 4,
+            "quotation": 13,
+            "ultraPosition": 40,
+            "club": "Brighton",
+            "teamid": "36",
+            "joinDate": "2019-08-05"
         },
         {
             "id": "player_115556",
@@ -562,17 +584,6 @@
             "joinDate": "2018-07-01"
         },
         {
-            "id": "player_143877",
-            "lastname": "Sørloth",
-            "firstname": "Alexander",
-            "position": 4,
-            "quotation": 6,
-            "ultraPosition": 40,
-            "club": "Crystal Palace",
-            "teamid": "31",
-            "joinDate": "2018-01-31"
-        },
-        {
             "id": "player_145232",
             "lastname": "Grimshaw",
             "firstname": "Daniel",
@@ -621,7 +632,7 @@
             "lastname": "Mings",
             "firstname": "Tyrone",
             "position": 2,
-            "quotation": 5,
+            "quotation": 10,
             "ultraPosition": 20,
             "club": "Aston Villa",
             "teamid": "7",
@@ -777,9 +788,9 @@
             "position": 3,
             "quotation": 1,
             "ultraPosition": 32,
-            "club": "Liverpool",
-            "teamid": "14",
-            "joinDate": "2015-07-01"
+            "club": "Bournemouth",
+            "teamid": "91",
+            "joinDate": "2019-08-06"
         },
         {
             "id": "player_153723",
@@ -846,17 +857,6 @@
             "club": "Bournemouth",
             "teamid": "91",
             "joinDate": "2016-07-08"
-        },
-        {
-            "id": "player_155503",
-            "lastname": "Freddy Woodman",
-            "firstname": null,
-            "position": 1,
-            "quotation": 1,
-            "ultraPosition": 10,
-            "club": "Newcastle",
-            "teamid": "4",
-            "joinDate": "2013-08-01"
         },
         {
             "id": "player_155513",
@@ -969,15 +969,15 @@
             "joinDate": "2018-08-08"
         },
         {
-            "id": "player_160190",
-            "lastname": "Palmer",
-            "firstname": "Kasey",
+            "id": "player_160987",
+            "lastname": "Gbamin",
+            "firstname": "Jean-Philippe",
             "position": 3,
-            "quotation": 1,
-            "ultraPosition": 32,
-            "club": "Chelsea",
-            "teamid": "8",
-            "joinDate": "2016-04-09"
+            "quotation": 12,
+            "ultraPosition": 31,
+            "club": "Everton",
+            "teamid": "11",
+            "joinDate": "2019-08-02"
         },
         {
             "id": "player_16229",
@@ -1090,28 +1090,6 @@
             "joinDate": "2013-07-01"
         },
         {
-            "id": "player_168301",
-            "lastname": "Palmer-Brown",
-            "firstname": "Erik",
-            "position": 2,
-            "quotation": 1,
-            "ultraPosition": 20,
-            "club": "Man. City",
-            "teamid": "43",
-            "joinDate": "2018-01-01"
-        },
-        {
-            "id": "player_168399",
-            "lastname": "Norris",
-            "firstname": "Will",
-            "position": 1,
-            "quotation": 1,
-            "ultraPosition": 10,
-            "club": "Wolverhampton",
-            "teamid": "39",
-            "joinDate": "2017-07-11"
-        },
-        {
             "id": "player_168566",
             "lastname": "Nkoudou",
             "firstname": "Georges-Kévin",
@@ -1178,15 +1156,15 @@
             "joinDate": "2019-07-01"
         },
         {
-            "id": "player_169527",
-            "lastname": "Williams",
-            "firstname": "Joe",
-            "position": 3,
-            "quotation": 1,
-            "ultraPosition": 31,
-            "club": "Everton",
-            "teamid": "11",
-            "joinDate": "2014-12-10"
+            "id": "player_169432",
+            "lastname": "McBurnie",
+            "firstname": "Oliver",
+            "position": 4,
+            "quotation": 12,
+            "ultraPosition": 40,
+            "club": "Sheffield",
+            "teamid": "49",
+            "joinDate": "2019-08-02"
         },
         {
             "id": "player_169556",
@@ -1270,11 +1248,11 @@
             "lastname": "Henderson",
             "firstname": "Dean",
             "position": 1,
-            "quotation": 1,
+            "quotation": 9,
             "ultraPosition": 10,
             "club": "Sheffield",
             "teamid": "49",
-            "joinDate": "2019-06-26"
+            "joinDate": "2019-07-26"
         },
         {
             "id": "player_17349",
@@ -1310,28 +1288,6 @@
             "joinDate": "2017-08-03"
         },
         {
-            "id": "player_173792",
-            "lastname": "Oxford",
-            "firstname": "Reece",
-            "position": 2,
-            "quotation": 1,
-            "ultraPosition": 20,
-            "club": "West Ham",
-            "teamid": "21",
-            "joinDate": "2014-08-25"
-        },
-        {
-            "id": "player_173804",
-            "lastname": "Ndukwu",
-            "firstname": "Layton",
-            "position": 4,
-            "quotation": 4,
-            "ultraPosition": 40,
-            "club": "Leicester",
-            "teamid": "13",
-            "joinDate": "2017-07-25"
-        },
-        {
             "id": "player_173807",
             "lastname": "Davies",
             "firstname": "Tom",
@@ -1365,17 +1321,6 @@
             "joinDate": "2017-07-01"
         },
         {
-            "id": "player_174594",
-            "lastname": "Nmecha",
-            "firstname": "Lukas",
-            "position": 4,
-            "quotation": 3,
-            "ultraPosition": 40,
-            "club": "Man. City",
-            "teamid": "43",
-            "joinDate": "2017-10-01"
-        },
-        {
             "id": "player_174595",
             "lastname": "Muskwe",
             "firstname": "Admiral",
@@ -1385,17 +1330,6 @@
             "club": "Leicester",
             "teamid": "13",
             "joinDate": "2019-07-15"
-        },
-        {
-            "id": "player_174597",
-            "lastname": "Green",
-            "firstname": "Andre",
-            "position": 3,
-            "quotation": 7,
-            "ultraPosition": 32,
-            "club": "Aston Villa",
-            "teamid": "7",
-            "joinDate": "2015-05-22"
         },
         {
             "id": "player_174944",
@@ -1431,17 +1365,6 @@
             "joinDate": "2016-07-01"
         },
         {
-            "id": "player_175944",
-            "lastname": "Hepburn-Murphy",
-            "firstname": "Rushian",
-            "position": 4,
-            "quotation": 7,
-            "ultraPosition": 40,
-            "club": "Aston Villa",
-            "teamid": "7",
-            "joinDate": "2015-03-14"
-        },
-        {
             "id": "player_177815",
             "lastname": "Calvert-Lewin",
             "firstname": "Dominic",
@@ -1451,17 +1374,6 @@
             "club": "Everton",
             "teamid": "11",
             "joinDate": "2016-10-01"
-        },
-        {
-            "id": "player_178173",
-            "lastname": "Clarke",
-            "firstname": "Matthew",
-            "position": 2,
-            "quotation": 2,
-            "ultraPosition": 20,
-            "club": "Brighton",
-            "teamid": "36",
-            "joinDate": "2019-06-21"
         },
         {
             "id": "player_178304",
@@ -1486,17 +1398,6 @@
             "joinDate": "2016-02-06"
         },
         {
-            "id": "player_179365",
-            "lastname": "Oxborough",
-            "firstname": "Aston",
-            "position": 1,
-            "quotation": 1,
-            "ultraPosition": 10,
-            "club": "Norwich",
-            "teamid": "45",
-            "joinDate": "2018-07-01"
-        },
-        {
             "id": "player_179587",
             "lastname": "Srbeny",
             "firstname": "Dennis",
@@ -1506,17 +1407,6 @@
             "club": "Norwich",
             "teamid": "45",
             "joinDate": "2018-01-25"
-        },
-        {
-            "id": "player_179596",
-            "lastname": "Moore",
-            "firstname": "Elliott",
-            "position": 2,
-            "quotation": 1,
-            "ultraPosition": 20,
-            "club": "Leicester",
-            "teamid": "13",
-            "joinDate": "2017-05-17"
         },
         {
             "id": "player_179830",
@@ -1578,7 +1468,7 @@
             "lastname": "Joelinton",
             "firstname": null,
             "position": 4,
-            "quotation": 1,
+            "quotation": 16,
             "ultraPosition": 40,
             "club": "Newcastle",
             "teamid": "4",
@@ -1594,28 +1484,6 @@
             "club": "Newcastle",
             "teamid": "4",
             "joinDate": "2013-07-01"
-        },
-        {
-            "id": "player_181913",
-            "lastname": "Ugbo",
-            "firstname": "Ike",
-            "position": 4,
-            "quotation": 1,
-            "ultraPosition": 40,
-            "club": "Chelsea",
-            "teamid": "8",
-            "joinDate": "2019-05-15"
-        },
-        {
-            "id": "player_182436",
-            "lastname": "Woodburn",
-            "firstname": "Ben",
-            "position": 4,
-            "quotation": 1,
-            "ultraPosition": 40,
-            "club": "Liverpool",
-            "teamid": "14",
-            "joinDate": "2016-07-01"
         },
         {
             "id": "player_183487",
@@ -1671,6 +1539,17 @@
             "club": "Aston Villa",
             "teamid": "7",
             "joinDate": "2017-07-01"
+        },
+        {
+            "id": "player_184704",
+            "lastname": "Nakamba",
+            "firstname": "Marvelous",
+            "position": 3,
+            "quotation": 6,
+            "ultraPosition": 31,
+            "club": "Aston Villa",
+            "teamid": "7",
+            "joinDate": "2019-08-01"
         },
         {
             "id": "player_18499",
@@ -1838,6 +1717,17 @@
             "joinDate": "2015-08-25"
         },
         {
+            "id": "player_19419",
+            "lastname": "Cahill",
+            "firstname": "Gary",
+            "position": 2,
+            "quotation": 7,
+            "ultraPosition": 20,
+            "club": "Crystal Palace",
+            "teamid": "31",
+            "joinDate": "2019-08-05"
+        },
+        {
             "id": "player_194401",
             "lastname": "Peñaranda",
             "firstname": "Adalberto",
@@ -1952,7 +1842,7 @@
             "lastname": "Muto",
             "firstname": "Yoshinori",
             "position": 4,
-            "quotation": 4,
+            "quotation": 8,
             "ultraPosition": 40,
             "club": "Newcastle",
             "teamid": "4",
@@ -2045,17 +1935,6 @@
             "club": "Arsenal",
             "teamid": "3",
             "joinDate": "2018-07-10"
-        },
-        {
-            "id": "player_199583",
-            "lastname": "Sterling",
-            "firstname": "Dujon",
-            "position": 3,
-            "quotation": 1,
-            "ultraPosition": 31,
-            "club": "Chelsea",
-            "teamid": "8",
-            "joinDate": "2017-09-01"
         },
         {
             "id": "player_199584",
@@ -2223,17 +2102,6 @@
             "joinDate": "2019-07-10"
         },
         {
-            "id": "player_201667",
-            "lastname": "Knight",
-            "firstname": "Josh",
-            "position": 2,
-            "quotation": 1,
-            "ultraPosition": 20,
-            "club": "Leicester",
-            "teamid": "13",
-            "joinDate": "2017-07-01"
-        },
-        {
             "id": "player_20310",
             "lastname": "Caballero",
             "firstname": "Willy",
@@ -2254,17 +2122,6 @@
             "club": "Man. City",
             "teamid": "43",
             "joinDate": "2018-07-01"
-        },
-        {
-            "id": "player_204481",
-            "lastname": "Johnson",
-            "firstname": "Tyreke",
-            "position": 3,
-            "quotation": 1,
-            "ultraPosition": 32,
-            "club": "Southampton",
-            "teamid": "20",
-            "joinDate": "2018-12-15"
         },
         {
             "id": "player_20452",
@@ -2353,17 +2210,6 @@
             "club": "Watford",
             "teamid": "57",
             "joinDate": "2018-01-30"
-        },
-        {
-            "id": "player_206913",
-            "lastname": "Harker",
-            "firstname": "Nathan",
-            "position": 1,
-            "quotation": 1,
-            "ultraPosition": 10,
-            "club": "Newcastle",
-            "teamid": "4",
-            "joinDate": "2019-01-04"
         },
         {
             "id": "player_206915",
@@ -2498,6 +2344,17 @@
             "joinDate": "2018-07-13"
         },
         {
+            "id": "player_209353",
+            "lastname": "Cutrone",
+            "firstname": "Patrick",
+            "position": 4,
+            "quotation": 13,
+            "ultraPosition": 40,
+            "club": "Wolverhampton",
+            "teamid": "39",
+            "joinDate": "2019-07-30"
+        },
+        {
             "id": "player_209411",
             "lastname": "Tupper",
             "firstname": "Joe",
@@ -2630,15 +2487,15 @@
             "joinDate": "2019-07-22"
         },
         {
-            "id": "player_215062",
-            "lastname": "Sanders",
-            "firstname": "Max",
-            "position": 3,
+            "id": "player_214572",
+            "lastname": "Austin",
+            "firstname": "Brandon",
+            "position": 1,
             "quotation": 1,
-            "ultraPosition": 31,
-            "club": "Brighton",
-            "teamid": "36",
-            "joinDate": "2018-03-16"
+            "ultraPosition": 10,
+            "club": "Tottenham",
+            "teamid": "6",
+            "joinDate": "2017-07-22"
         },
         {
             "id": "player_215459",
@@ -2685,17 +2542,6 @@
             "joinDate": "2018-08-09"
         },
         {
-            "id": "player_217331",
-            "lastname": "Surridge",
-            "firstname": "Sam",
-            "position": 4,
-            "quotation": 2,
-            "ultraPosition": 40,
-            "club": "Bournemouth",
-            "teamid": "91",
-            "joinDate": "2015-07-01"
-        },
-        {
             "id": "player_217401",
             "lastname": "Benson",
             "firstname": "Josh",
@@ -2705,17 +2551,6 @@
             "club": "Burnley",
             "teamid": "90",
             "joinDate": "2019-01-27"
-        },
-        {
-            "id": "player_217974",
-            "lastname": "Doyle-Hayes",
-            "firstname": "Jake",
-            "position": 3,
-            "quotation": 3,
-            "ultraPosition": 32,
-            "club": "Aston Villa",
-            "teamid": "7",
-            "joinDate": "2017-07-01"
         },
         {
             "id": "player_218031",
@@ -2740,17 +2575,6 @@
             "joinDate": "2019-07-10"
         },
         {
-            "id": "player_219002",
-            "lastname": "Lukebakio",
-            "firstname": "Dodi",
-            "position": 3,
-            "quotation": 7,
-            "ultraPosition": 32,
-            "club": "Watford",
-            "teamid": "57",
-            "joinDate": "2018-01-30"
-        },
-        {
             "id": "player_219265",
             "lastname": "Nmecha",
             "firstname": "Felix",
@@ -2771,6 +2595,39 @@
             "club": "Man. City",
             "teamid": "43",
             "joinDate": "2018-07-24"
+        },
+        {
+            "id": "player_220037",
+            "lastname": "Peacock-Farrell",
+            "firstname": "Bailey",
+            "position": 1,
+            "quotation": 8,
+            "ultraPosition": 10,
+            "club": "Burnley",
+            "teamid": "90",
+            "joinDate": "2019-08-02"
+        },
+        {
+            "id": "player_220307",
+            "lastname": "Danjuma Groeneveld",
+            "firstname": "Arnaut",
+            "position": 3,
+            "quotation": 8,
+            "ultraPosition": 32,
+            "club": "Bournemouth",
+            "teamid": "91",
+            "joinDate": "2019-08-01"
+        },
+        {
+            "id": "player_220394",
+            "lastname": "Doyle",
+            "firstname": "Tommy",
+            "position": 3,
+            "quotation": 1,
+            "ultraPosition": 31,
+            "club": "Man. City",
+            "teamid": "43",
+            "joinDate": "2019-07-16"
         },
         {
             "id": "player_220598",
@@ -2993,17 +2850,6 @@
             "joinDate": "2019-05-15"
         },
         {
-            "id": "player_225798",
-            "lastname": "Payne",
-            "firstname": "Alfie",
-            "position": 3,
-            "quotation": 1,
-            "ultraPosition": 31,
-            "club": "Norwich",
-            "teamid": "45",
-            "joinDate": "2018-11-02"
-        },
-        {
             "id": "player_226021",
             "lastname": "Revan",
             "firstname": "Dominic",
@@ -3024,6 +2870,17 @@
             "club": "Brighton",
             "teamid": "36",
             "joinDate": "2018-07-17"
+        },
+        {
+            "id": "player_227290",
+            "lastname": "Jordan",
+            "firstname": "Corey",
+            "position": 2,
+            "quotation": 1,
+            "ultraPosition": 20,
+            "club": "Bournemouth",
+            "teamid": "91",
+            "joinDate": "2016-01-01"
         },
         {
             "id": "player_229273",
@@ -3103,6 +2960,17 @@
             "joinDate": "2019-07-15"
         },
         {
+            "id": "player_232361",
+            "lastname": "Perry",
+            "firstname": "Taylor",
+            "position": 3,
+            "quotation": 1,
+            "ultraPosition": 32,
+            "club": "Wolverhampton",
+            "teamid": "39",
+            "joinDate": "2019-07-15"
+        },
+        {
             "id": "player_232454",
             "lastname": "Lyons-Foster",
             "firstname": "Brooklyn",
@@ -3123,17 +2991,6 @@
             "club": "Aston Villa",
             "teamid": "7",
             "joinDate": "2019-02-12"
-        },
-        {
-            "id": "player_232787",
-            "lastname": "Gallagher",
-            "firstname": "Conor",
-            "position": 3,
-            "quotation": 1,
-            "ultraPosition": 31,
-            "club": "Chelsea",
-            "teamid": "8",
-            "joinDate": "2019-05-15"
         },
         {
             "id": "player_232797",
@@ -3354,6 +3211,17 @@
             "club": "Man. City",
             "teamid": "43",
             "joinDate": "2019-07-16"
+        },
+        {
+            "id": "player_247632",
+            "lastname": "Pedro Neto",
+            "firstname": null,
+            "position": 3,
+            "quotation": 5,
+            "ultraPosition": 32,
+            "club": "Wolverhampton",
+            "teamid": "39",
+            "joinDate": "2019-08-02"
         },
         {
             "id": "player_248504",
@@ -3741,6 +3609,17 @@
             "joinDate": "2018-08-09"
         },
         {
+            "id": "player_428610",
+            "lastname": "Bruno Jordao",
+            "firstname": null,
+            "position": 3,
+            "quotation": 5,
+            "ultraPosition": 31,
+            "club": "Wolverhampton",
+            "teamid": "39",
+            "joinDate": "2019-08-02"
+        },
+        {
             "id": "player_42899",
             "lastname": "Romero",
             "firstname": "Sergio",
@@ -3761,6 +3640,17 @@
             "club": "West Ham",
             "teamid": "21",
             "joinDate": "2017-07-24"
+        },
+        {
+            "id": "player_431019",
+            "lastname": "Ziger",
+            "firstname": "Karlo",
+            "position": 1,
+            "quotation": 1,
+            "ultraPosition": 10,
+            "club": "Chelsea",
+            "teamid": "8",
+            "joinDate": "2019-08-02"
         },
         {
             "id": "player_431131",
@@ -3808,8 +3698,8 @@
         },
         {
             "id": "player_432656",
-            "lastname": "Garcia",
-            "firstname": "Eric",
+            "lastname": "Eric Garcia",
+            "firstname": null,
             "position": 2,
             "quotation": 1,
             "ultraPosition": 20,
@@ -3873,17 +3763,6 @@
             "joinDate": "2014-01-25"
         },
         {
-            "id": "player_43808",
-            "lastname": "Suttner",
-            "firstname": "Markus",
-            "position": 2,
-            "quotation": 1,
-            "ultraPosition": 21,
-            "club": "Brighton",
-            "teamid": "36",
-            "joinDate": "2017-07-13"
-        },
-        {
             "id": "player_441027",
             "lastname": "Dionkou",
             "firstname": "Alpha Richard",
@@ -3937,6 +3816,17 @@
             "club": "Arsenal",
             "teamid": "3",
             "joinDate": "2019-07-15"
+        },
+        {
+            "id": "player_444172",
+            "lastname": "Dennis",
+            "firstname": "William",
+            "position": 1,
+            "quotation": 1,
+            "ultraPosition": 10,
+            "club": "Bournemouth",
+            "teamid": "91",
+            "joinDate": "2019-08-01"
         },
         {
             "id": "player_444181",
@@ -4005,6 +3895,39 @@
             "joinDate": "2019-07-19"
         },
         {
+            "id": "player_447932",
+            "lastname": "Zemura",
+            "firstname": "Jordan",
+            "position": 2,
+            "quotation": 1,
+            "ultraPosition": 21,
+            "club": "Bournemouth",
+            "teamid": "91",
+            "joinDate": "2019-08-01"
+        },
+        {
+            "id": "player_448487",
+            "lastname": "Söndergaard",
+            "firstname": "Andreas",
+            "position": 1,
+            "quotation": 1,
+            "ultraPosition": 10,
+            "club": "Wolverhampton",
+            "teamid": "39",
+            "joinDate": "2019-08-05"
+        },
+        {
+            "id": "player_448519",
+            "lastname": "Sherring",
+            "firstname": "Sam",
+            "position": 2,
+            "quotation": 1,
+            "ultraPosition": 20,
+            "club": "Bournemouth",
+            "teamid": "91",
+            "joinDate": "2019-08-01"
+        },
+        {
             "id": "player_448791",
             "lastname": "White",
             "firstname": "Harvey",
@@ -4035,6 +3958,28 @@
             "ultraPosition": 10,
             "club": "Man. City",
             "teamid": "43",
+            "joinDate": "2019-07-01"
+        },
+        {
+            "id": "player_459373",
+            "lastname": "Gonçalo Cardoso",
+            "firstname": null,
+            "position": 2,
+            "quotation": 5,
+            "ultraPosition": 20,
+            "club": "West Ham",
+            "teamid": "21",
+            "joinDate": "2019-08-06"
+        },
+        {
+            "id": "player_459924",
+            "lastname": "Crichlow",
+            "firstname": "Kane",
+            "position": 3,
+            "quotation": 3,
+            "ultraPosition": 32,
+            "club": "Watford",
+            "teamid": "57",
             "joinDate": "2019-07-01"
         },
         {
@@ -4080,28 +4025,6 @@
             "club": "Aston Villa",
             "teamid": "7",
             "joinDate": "2017-01-31"
-        },
-        {
-            "id": "player_48613",
-            "lastname": "Evans",
-            "firstname": "Ched",
-            "position": 4,
-            "quotation": 5,
-            "ultraPosition": 40,
-            "club": "Sheffield",
-            "teamid": "49",
-            "joinDate": "2017-06-10"
-        },
-        {
-            "id": "player_48615",
-            "lastname": "Arter",
-            "firstname": "Harry",
-            "position": 3,
-            "quotation": 6,
-            "ultraPosition": 31,
-            "club": "Bournemouth",
-            "teamid": "91",
-            "joinDate": "2010-07-01"
         },
         {
             "id": "player_48717",
@@ -4179,17 +4102,6 @@
             "club": "Everton",
             "teamid": "11",
             "joinDate": "2013-09-02"
-        },
-        {
-            "id": "player_51507",
-            "lastname": "Koscielny",
-            "firstname": "Laurent",
-            "position": 2,
-            "quotation": 14,
-            "ultraPosition": 20,
-            "club": "Arsenal",
-            "teamid": "3",
-            "joinDate": "2010-07-07"
         },
         {
             "id": "player_51927",
@@ -4577,6 +4489,17 @@
             "joinDate": "2016-07-19"
         },
         {
+            "id": "player_60706",
+            "lastname": "Adrián",
+            "firstname": null,
+            "position": 1,
+            "quotation": 7,
+            "ultraPosition": 10,
+            "club": "Liverpool",
+            "teamid": "14",
+            "joinDate": "2019-08-05"
+        },
+        {
             "id": "player_61603",
             "lastname": "Drinkwater",
             "firstname": "Daniel",
@@ -4641,17 +4564,6 @@
             "club": "Watford",
             "teamid": "57",
             "joinDate": "2017-08-31"
-        },
-        {
-            "id": "player_66797",
-            "lastname": "Mignolet",
-            "firstname": "Simon",
-            "position": 1,
-            "quotation": 6,
-            "ultraPosition": 10,
-            "club": "Liverpool",
-            "teamid": "14",
-            "joinDate": "2013-06-26"
         },
         {
             "id": "player_66838",
@@ -4746,7 +4658,7 @@
             "lastname": "Moore",
             "firstname": "Simon",
             "position": 1,
-            "quotation": 7,
+            "quotation": 9,
             "ultraPosition": 10,
             "club": "Sheffield",
             "teamid": "49",
@@ -4790,7 +4702,7 @@
             "lastname": "Lejeune",
             "firstname": "Florian",
             "position": 2,
-            "quotation": 7,
+            "quotation": 10,
             "ultraPosition": 20,
             "club": "Newcastle",
             "teamid": "4",
@@ -5237,6 +5149,17 @@
             "joinDate": "2019-07-01"
         },
         {
+            "id": "player_92159",
+            "lastname": "Willems",
+            "firstname": "Jetro",
+            "position": 2,
+            "quotation": 7,
+            "ultraPosition": 21,
+            "club": "Newcastle",
+            "teamid": "4",
+            "joinDate": "2019-08-02"
+        },
+        {
             "id": "player_92383",
             "lastname": "Wells",
             "firstname": "Nahki",
@@ -5318,7 +5241,7 @@
             "lastname": "Pope",
             "firstname": "Nick",
             "position": 1,
-            "quotation": 6,
+            "quotation": 10,
             "ultraPosition": 10,
             "club": "Burnley",
             "teamid": "90",
@@ -5340,7 +5263,7 @@
             "lastname": "Carrillo",
             "firstname": "Guido",
             "position": 4,
-            "quotation": 14,
+            "quotation": 10,
             "ultraPosition": 40,
             "club": "Southampton",
             "teamid": "20",
@@ -5640,18 +5563,46 @@
             "status": 2
         },
         {
-            "id": "player_20936265",
-            "lastname": "Ibrahimovic",
-            "firstname": null,
-            "position": 2,
+            "id": "player_170137",
+            "lastname": "Saint-Maximin",
+            "firstname": "Allan",
+            "position": 3,
+            "quotation": 16,
+            "ultraPosition": 32,
+            "club": "Newcastle",
+            "teamid": "4",
+            "joinDate": "2019-08-02",
+            "pricePaid": 23,
+            "buying_date": "2019-08-07T12:38:33Z",
+            "status": 1
+        },
+        {
+            "id": "player_195735",
+            "lastname": "Pépé",
+            "firstname": "Nicolas",
+            "position": 4,
+            "quotation": 28,
+            "ultraPosition": 40,
+            "club": "Arsenal",
+            "teamid": "3",
+            "joinDate": "2019-08-01",
+            "pricePaid": 87,
+            "buying_date": "2019-08-07T12:38:33Z",
+            "status": 1
+        },
+        {
+            "id": "player_242058",
+            "lastname": "Kean",
+            "firstname": "Moise",
+            "position": 4,
             "quotation": 14,
-            "ultraPosition": 21,
-            "club": "Brighton",
-            "teamid": "36",
-            "joinDate": "2018-07-05",
-            "pricePaid": 14,
-            "buying_date": "2019-08-06T21:28:05Z",
-            "status": 2
+            "ultraPosition": 40,
+            "club": "Everton",
+            "teamid": "11",
+            "joinDate": "2019-08-04",
+            "pricePaid": 17,
+            "buying_date": "2019-08-07T12:38:33Z",
+            "status": 1
         }
     ],
     "options": {

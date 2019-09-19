@@ -6,33 +6,24 @@ import './Player.css';
 
 
 class Player extends Component {
+    static propTypes = {
+        data: PropTypes.objectOf().isRequired,
+    }
 
 
     render() {
-        const data = {
-            id: "player_100180",
-            lastname: "Danilo",
-            firstname: null,
-            position: 2,
-            quotation: 9,
-            ultraPosition: 21,
-            club: "Man. City",
-            teamid: "43",
-            joinDate: "2017-07-23"
-        };
-
-
         const {
+            club,
+            quotation,
+            joinDate,
             lastname,
             firstname,
-            club,
-            joinDate
-        } = data;
+        } = this.props.data;
         return (
             <div className='container'>
-                <h3>{lastname}</h3>
-                { firstname && <h3>{firstname}</h3>}
+                <h3>{lastname} {firstname}</h3>
                 <span>Club: {club}</span>
+                <span>Price: {quotation}</span>
                 {joinDate &&
                     <span>
                         Joined : {joinDate}

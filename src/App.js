@@ -8,6 +8,7 @@ import PlayerList from './components/playerlist/PlayerList';
 class App extends Component {
   state = {
     newPlayers: [],
+    oldPlayers: [],
     availablePlayersMorning: [],
     availablePlayersAfternoon: [],
   };
@@ -16,30 +17,27 @@ class App extends Component {
     let morning = [];
     let afternoon = [];
     let newPlayers = [];
+    let oldPlayers = [];
 
-    console.log('--- get data morning')
-    axios.get('./data/data_morning_en.json').then((res) => {
-      console.log('>>> gOt data morning')
+
+    axios.get('./data/data-2020-9-5-14-0.json').then((res) => {
       let data = res.data;
-      return morning = [...data.availablePlayers, ...data.userPlayers];
+      return morning = data;// [...data.availablePlayers, ...data.userPlayers];
+    }).then(async () => {
+      const { data }  = await axios.get('./data/data-2020-9-5-14-11.json');
+      return afternoon = data;
     }).then(() => {
-      console.log('--- get data afternoon')
-      return axios.get('./data/data_afternoon_en.json').then((res) => {
-        console.log('>>> got data afternoon')
-        let dataAft = res.data
-        console.log(dataAft.availablePlayers)
-        return afternoon = [...dataAft.availablePlayers, ...dataAft.userPlayers];
-      })
-    }).then(() => {
-        newPlayers = this.difference(afternoon, morning)
-        newPlayers = newPlayers.sort((playerA, playerB) => playerB.quotation - playerA.quotation)
+      newPlayers = this.difference(afternoon, morning)
+      oldPlayers = this.difference(morning, afternoon)
+      newPlayers = newPlayers.sort((playerA, playerB) => playerB.quotation - playerA.quotation)
 
-        this.setState(() => ({
-          availablePlayersMorning: morning,
-          availablePlayersAfternoon: afternoon,
-          newPlayers
-        }));
-      })
+      this.setState(() => ({
+        availablePlayersMorning: morning,
+        availablePlayersAfternoon: afternoon,
+        newPlayers,
+        oldPlayers,
+      }));
+    })
     }
 
   comparer = (otherArray) => {
@@ -64,18 +62,19 @@ class App extends Component {
   render() {
 
     const {
-      availablePlayersMorning,
-      availablePlayersAfternoon,
-      newPlayers
+      newPlayers,
+      oldPlayers,
     } = this.state;
 
     console.log('newPlayers', newPlayers)
 
     return (
       <div className="App">
+
+        <h1>New Players</h1>
         <PlayerList list={newPlayers} />
-        {/* <PlayerList list={availablePlayersMorning} /> */}
-        {/* <PlayerList list={availablePlayersAfternoon} /> */}
+        <h1>Old Players</h1>
+        <PlayerList list={oldPlayers} />
       </div>
     );
   }

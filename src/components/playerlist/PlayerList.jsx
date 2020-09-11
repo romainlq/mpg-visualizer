@@ -20,7 +20,6 @@ class PlayerList extends Component {
 
         return (
             <div className='PlayerList'>
-                <h1>Player list</h1>
                 {list &&
                     <div className='PlayerList-container'>
                         {list.map((player) => {

@@ -9,28 +9,36 @@ class PlayerList extends Component {
         list: PropTypes.array.isRequired,
     }
 
-    renderPlayer = (player) => {
-        return (
-            <Player data={player} />
-        );
+    renderPlayerList = () => {
+        const { list } = this.props;
+
+        if (!list) {
+            return false;
+        }
+
+        if (list.length === 0) {
+            return (
+                <p>No players</p>
+            );
+        }
+
+        else {
+            return list.map((player) => {
+                return <Player data={player} />
+            })
+        }
     }
 
     render() {
-        const { list } = this.props;
-
+        console.log(this.props.list)
         return (
             <div className='PlayerList'>
-                {list &&
-                    <div className='PlayerList-container'>
-                        {list.map((player) => {
-                            return this.renderPlayer(player)
-                        })}
-                    </div>
-                }
+                <div className='PlayerList-container'>
+                    {this.renderPlayerList()}
+                </div>
             </div>
-        )
+        );
     }
-
 }
 
 export default PlayerList;

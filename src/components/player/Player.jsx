@@ -10,6 +10,10 @@ class Player extends Component {
         data: PropTypes.objectOf().isRequired,
     }
 
+    renderCurrentChampionship() {
+
+    }
+
 
     render() {
         const {
@@ -19,14 +23,15 @@ class Player extends Component {
             lastname,
             firstname,
         } = this.props.data;
+        console.log(this.props)
         return (
             <div className='container'>
                 <h3>{lastname} {firstname}</h3>
-                <span>Club: {club}</span>
-                <span>Price: {quotation}</span>
+                <span>🏟 {club}</span>
+                <span>💵 {quotation}</span>
                 {joinDate &&
                     <span>
-                        Joined : {joinDate}
+                        {joinDate}
                     </span>
                 }
             </div>

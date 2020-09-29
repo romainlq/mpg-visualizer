@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import axios from 'axios';
 
 import './App.css';
 
 import PlayerList from './components/playerlist/PlayerList';
+import Navbar from './components/navbar/Navbar';
 
 class App extends Component {
   state = {
@@ -19,12 +20,15 @@ class App extends Component {
     let newPlayers = [];
     let oldPlayers = [];
 
+    const OLD_FILE = './data/data-2020-9-15-13-49.json';
+    // const OLD_FILE = './data/data-2020-9-21-17-4.json';
+    const NEW_FILE = './data/data-2020-9-29-13-29.json';
 
-    axios.get('./data/data-2020-9-5-14-0.json').then((res) => {
+    axios.get(OLD_FILE).then((res) => {
       let data = res.data;
-      return morning = data;// [...data.availablePlayers, ...data.userPlayers];
+      return morning = data;
     }).then(async () => {
-      const { data }  = await axios.get('./data/data-2020-9-5-14-11.json');
+      const { data }  = await axios.get(NEW_FILE);
       return afternoon = data;
     }).then(() => {
       newPlayers = this.difference(afternoon, morning)
@@ -49,33 +53,29 @@ class App extends Component {
   };
 
   difference = (arrA, arrB) => {
-    return  arrA.filter(function(obj) {
+    return arrA.filter(function(obj) {
       return !arrB.some(function(obj2) {
           return obj.id === obj2.id;
       });
   });
   }
 
-
-
-
   render() {
-
     const {
       newPlayers,
       oldPlayers,
     } = this.state;
 
-    console.log('newPlayers', newPlayers)
-
     return (
-      <div className="App">
-
-        <h1>New Players</h1>
-        <PlayerList list={newPlayers} />
-        <h1>Old Players</h1>
-        <PlayerList list={oldPlayers} />
-      </div>
+      <Fragment>
+        <Navbar />
+        <div className="App">
+          <h1>New Players</h1>
+          <PlayerList list={newPlayers} />
+          <h1>Old Players</h1>
+          <PlayerList list={oldPlayers} />
+        </div>
+      </Fragment>
     );
   }
 }

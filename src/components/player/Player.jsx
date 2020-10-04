@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
 
-
 import './Player.css';
 
 
@@ -9,11 +8,6 @@ class Player extends Component {
     static propTypes = {
         data: PropTypes.objectOf().isRequired,
     }
-
-    renderCurrentChampionship() {
-
-    }
-
 
     render() {
         const {

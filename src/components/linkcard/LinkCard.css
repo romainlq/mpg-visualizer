@@ -1,0 +1,16 @@
+.LinkCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: yellow;
+    margin: 32px;
+    height: 140px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.LinkCard span {
+    color: red;
+
+}

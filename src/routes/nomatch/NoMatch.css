@@ -1,0 +1,23 @@
+.NoMatch {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #4054cc;
+    padding: 50px;
+    color: #FFF;
+}
+
+.NoMatch h1 {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+.NoMatch a {
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: underline;
+}

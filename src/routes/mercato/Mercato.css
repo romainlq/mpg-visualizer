@@ -1,11 +1,11 @@
-.Home {
+.Mercato {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
 
-.Home h1 {
+.Mercato h1 {
     font-weight: 700;
     margin: 24px auto;
 }

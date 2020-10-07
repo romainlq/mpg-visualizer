@@ -7,17 +7,19 @@ import {
 
 import './App.css';
 
-import Navbar from './components/navbar/Navbar';
-import Home from './pages/home/HomeContainer';
-import Mercato from './pages/mercato/Mercato';
-import NoMatch from './pages/nomatch/NoMatch'
-import OddsEvolution from './pages/oddsevolution/OddsEvolutionContainer';
+import Navbar from 'components/navbar/Navbar';
+import Home from 'routes/home/HomeContainer';
+import Mercato from 'routes/mercato/MercatoContainer';
+import NoMatch from 'routes/nomatch/NoMatch'
+import OddsEvolution from 'routes/oddsevolution/OddsEvolutionContainer';
+
+import ROUTES from 'routes/routes.js'
 
 class App extends Component {
   render() {
     return (
       <Router>
-        <Navbar />
+        <Navbar ROUTES={ROUTES}/>
         <Switch>
           <Route path="/mercato">
             <Mercato />

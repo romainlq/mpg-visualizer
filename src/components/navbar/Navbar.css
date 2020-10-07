@@ -4,8 +4,33 @@
     background-color: #45C845;
     height: 50px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     padding: 8px 16px;
+}
+
+.Navbar-logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.Navbar-logo a {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.Navbar-items {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.Navbar a {
     color: white;
+    text-decoration: none;
+}
+.Navbar li {
+    list-style-type: none;
+    margin: 0 8px;
 }

@@ -1,20 +1,22 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types';
 
 import './Button.css';
 
 
-class Button extends Component {
+class Button extends PureComponent {
     static propTypes = {
         children: PropTypes.node.isRequired,
         onClick: PropTypes.oneOfType([
             PropTypes.func,
             PropTypes.string,
-        ])
+        ]),
+        disabled: PropTypes.bool,
     };
 
     static defaultProps = {
         onClick: () => {},
+        disabled: false,
     }
 
     render() {
@@ -22,14 +24,18 @@ class Button extends Component {
             onClick,
             children,
             active,
+            disabled,
         } = this.props;
 
-        const modButton = active ? 'mod-success' : 'mod-disabled';
+        let modButton = 'mod-success';
+
+        modButton = active ? 'mod-success' : 'mod-disabled';
 
         return (
-            <button 
-                className={`Button ${modButton}`} 
+            <button
+                className={`Button ${modButton}`}
                 onClick={onClick}
+                disabled={disabled}
             >
                 {children}
             </button>

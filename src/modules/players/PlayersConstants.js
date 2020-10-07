@@ -2,4 +2,13 @@ export const PLAYERS = {
     FETCH_PLAYERS_START: 'PLAYERS_FETCH_PLAYERS_START',
     FETCH_PLAYERS_SUCCESS: 'PLAYERS_FETCH_PLAYERS_SUCCESS',
     FETCH_PLAYERS_ERROR: 'PLAYERS_FETCH_PLAYERS_ERROR',
+
+    POSITIONS: {
+        GOAL: 10,
+        DEF_LAT: 20, // Note to MPG --> Why 20 && 21 AND 31 && 32 ?
+        DEF_CENT: 21,
+        MIL_DEF: 31,
+        MIL_OFF: 32,
+        ATT: 40,
+    }
 }

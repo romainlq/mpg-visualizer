@@ -5,21 +5,32 @@ This repo aims to be better than your opponents in your MPG league
 
 ## How ?
 
+### Get the data
+
+`node ./scripts/fetchData` will get the current list of players (Ligue 1 only) and save it into a file in the `public/data` directory.
+
+If you want to get data from a file in the App, go to `src/modules/players/PlayersClient.js` (this way you leave the MPG's API alone) and change the path of the files.
+
+### Start the App
+
+1. Install dependencies with `npm install`
+2. Start the app with `npm start`
+3. Go to `http://localhost:3000`
+
 ### Mercato changes
 
 This page allows to quickly see the players who joined / left the league.
+
+![Mercato](screenshots/mercato.png)
 
 #### Features
 
 - [x] See the departures / arrivals
 - [ ] Select different dates ?
 - [ ] Select league (PL/ Ligue 1, Serie A, Liga)
+- [ ] Improve design because it could look way better
 
-### Mpg stats ?
-
-This page allows to see the data (but it already exists in MPG) --> no value
-
-### Price evolution
+### Odds evolution
 
 This page allows to see the price evolution for players
 

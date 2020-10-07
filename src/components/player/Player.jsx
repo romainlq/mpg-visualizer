@@ -9,9 +9,9 @@ class Player extends Component {
         data: PropTypes.shape({
             club: PropTypes.string.isRequired,
             quotation: PropTypes.number.isRequired,
-            joinDate: PropTypes.string.isRequired,
+            joinDate: PropTypes.string,
             lastname: PropTypes.string.isRequired,
-            firstname: PropTypes.string.isRequired,
+            firstname: PropTypes.string,
             position: PropTypes.number.isRequired,
         }).isRequired,
         POSITIONS: PropTypes.object,

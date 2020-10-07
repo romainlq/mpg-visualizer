@@ -1,0 +1,76 @@
+.OddCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px;
+    width: 180px;
+    height: 160px;
+
+    border: 1px solid #e5eaea;
+    border-radius: 8px;
+}
+
+.OddCard-name {
+    padding: 0 16px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 16px;
+    margin: 24px 0 0 0;
+    text-align: center;
+}
+
+.OddCard-club {
+    padding: 0 16px;
+    font-style: italic;
+    font-size: 14px;
+    margin: 16px 0;
+    text-align: center;
+}
+
+.OddCard .success {
+    color: #45C845;
+}
+.OddCard .error {
+    color: rgb(255, 68, 78);
+}
+
+
+
+.OddCard-price {
+    margin-top: 16px;
+    display: -ms-flexbox;
+    display: flex;
+    height: 42px;
+    width: 100%;
+}
+
+.OddCard-oldPrice {
+    height: 100%;
+    width: 50%;
+    border-top: 1px solid #e5eaee;
+    border-right: 1px solid #e5eaee;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.OddCard-newPrice {
+    height: 100%;
+    width: 50%;
+    border-top: 1px solid #e5eaee;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}

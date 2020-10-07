@@ -12,6 +12,7 @@ const defaultState = {
 export default function players(state = defaultState, action) {
     switch (action.type) {
         case PLAYERS.FETCH_PLAYERS_START:
+        case PLAYERS.FETCH_PLAYERS_ODDS_START:
             return {
                 ...state,
                 processing: true,
@@ -26,7 +27,15 @@ export default function players(state = defaultState, action) {
                 newPlayers: action.newPlayers,
             };
 
+        case PLAYERS.FETCH_PLAYERS_ODDS_SUCCESS:
+            return {
+                ...state,
+                processing: false,
+                players: action.players,
+            };
+
         case PLAYERS.FETCH_PLAYERS_ERROR:
+        case PLAYERS.FETCH_PLAYERS_ODDS_ERROR:
             return {
                 ...state,
                 processing: false,

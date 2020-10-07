@@ -7,10 +7,14 @@ import './PlayerList.css'
 class PlayerList extends Component {
     static propTypes = {
         list: PropTypes.array.isRequired,
+        POSITIONS: PropTypes.object.isRequired
     }
 
     renderPlayerList = () => {
-        const { list } = this.props;
+        const {
+            POSITIONS,
+            list,
+        } = this.props;
 
         if (!list) {
             return false;
@@ -23,14 +27,19 @@ class PlayerList extends Component {
         }
 
         else {
-            return list.map((player) => {
-                return <Player data={player} />
+            return list.map((player, index) => {
+                return (
+                    <Player
+                        key={index}
+                        POSITIONS={POSITIONS}
+                        data={player}
+                    />
+                );
             })
         }
     }
 
     render() {
-        console.log(this.props.list)
         return (
             <div className='PlayerList'>
                 <div className='PlayerList-container'>

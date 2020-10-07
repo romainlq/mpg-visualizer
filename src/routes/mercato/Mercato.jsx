@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import axios from 'axios';
 
+import PlayerList from 'components/playerlist/PlayerList';
 
-import PlayerList from '../../components/playerlist/PlayerList';
+import './Mercato.css'
 
 class Mercato extends Component {
+  static propTypes = {
+    POSITIONS: PropTypes.object,
+  }
+
   state = {
     newPlayers: [],
     oldPlayers: [],
@@ -18,10 +24,8 @@ class Mercato extends Component {
     let newPlayers = [];
     let oldPlayers = [];
 
-    // const OLD_FILE = './data/data-2020-9-15-13-49.json';
-    // const OLD_FILE = './data/data-2020-9-21-17-4.json';
-    const OLD_FILE = './data/data-2020-9-29-13-29.json';
-    const NEW_FILE = './data/data-2020-9-30-15-20.json';
+    const OLD_FILE = './data/data-2020-9-30-15-20.json';
+    const NEW_FILE = './data/data-2020-10-7-15-53.json';
 
     axios.get(OLD_FILE).then((res) => {
       let data = res.data;
@@ -60,17 +64,25 @@ class Mercato extends Component {
   }
 
   render() {
+    const { POSITIONS } = this.props;
+
     const {
       newPlayers,
       oldPlayers,
     } = this.state;
 
     return (
-        <div className="App">
+        <div className="Mercato">
           <h1>New Players</h1>
-          <PlayerList list={newPlayers} />
+          <PlayerList
+            POSITIONS={POSITIONS}
+            list={newPlayers}
+          />
           <h1>Old Players</h1>
-          <PlayerList list={oldPlayers} />
+          <PlayerList
+            POSITIONS={POSITIONS}
+            list={oldPlayers}
+          />
         </div>
     );
   }

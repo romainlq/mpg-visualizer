@@ -1,0 +1,30 @@
+.LinkCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: -webkit-gradient(linear,0 50%,50% 100%,color-stop(0,#414dd0),color-stop(100%,#2a32a7));
+    margin: 32px;
+    padding: 10px 10px 15px;
+    height: 140px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 4px;
+}
+
+.LinkCard-content {
+    border: 1px solid white;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.LinkCard-content span {
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}

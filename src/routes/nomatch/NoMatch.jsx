@@ -9,7 +9,7 @@ class NoMatch  extends Component {
     render() {
         return (
             <div className='NoMatch'>
-                <h1>NO MATCH</h1>
+                <h1>Tu t'es perdu comme Kostas</h1>
                 <Link to='/'>Retour à l'accueil</Link>
             </div>
         );

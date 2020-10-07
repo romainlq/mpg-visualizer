@@ -1,0 +1,20 @@
+.Button {
+    background: lightblue;
+    padding: 5px 8px;
+    border-radius: 16px;
+    color: white;
+    border-width: 0px;
+    min-width: 64px;
+}
+
+.Button.mod-success {
+    background: #45c945;
+}
+
+Button.mod-error {
+    background: #ff444e;
+}
+
+Button.mod-disabled {
+    background: #959daf;
+}

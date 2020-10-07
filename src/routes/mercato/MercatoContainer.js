@@ -1,15 +1,27 @@
 import { connect } from 'react-redux';
+
+import { PLAYERS } from 'modules/players/PlayersConstants';
+import { fetchPlayers } from 'modules/players/PlayersActions';
+
 import Mercato from "./Mercato";
 
-import {PLAYERS} from 'modules/players/PlayersConstants';
-
-
 const mapStateToProps = (state) => {
-    console.log(PLAYERS.POSITIONS)
+    const oldPlayers = state.players.oldPlayers;
+    const newPlayers = state.players.newPlayers;
 
     return {
         POSITIONS: PLAYERS.POSITIONS,
-    }
+        oldPlayers,
+        newPlayers,
+    };
 }
 
-export default connect(mapStateToProps)(Mercato)
+const mapDispatchToProps = (dispatch) => {
+    return {
+        fetchPlayers() {
+            dispatch(fetchPlayers());
+        },
+    };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Mercato)

@@ -3,13 +3,14 @@ import { PLAYERS } from './PlayersConstants';
 
 const defaultState = {
     players: [],
+    newPlayers: [],
+    oldPlayers: [],
     processing: false,
     error: null,
 }
 
 export default function players(state = defaultState, action) {
     switch (action.type) {
-
         case PLAYERS.FETCH_PLAYERS_START:
             return {
                 ...state,
@@ -21,9 +22,10 @@ export default function players(state = defaultState, action) {
             return {
                 ...state,
                 processing: false,
-                players: action.players,
+                oldPlayers: action.oldPlayers,
+                newPlayers: action.newPlayers,
             };
-        
+
         case PLAYERS.FETCH_PLAYERS_ERROR:
             return {
                 ...state,

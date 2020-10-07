@@ -5,8 +5,10 @@ import OddsEvolution from './OddsEvolution';
 
 const mapStateToProps = () => {
 
-    return {
+    let playerList = [];
 
+    return {
+        playerList,
     };
 }
 

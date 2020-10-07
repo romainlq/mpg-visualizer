@@ -16,18 +16,6 @@ const mapStateToProps = (state) => {
             to: '/odds',
             active: true,
         },
-        {
-            id: 3,
-            name: 'Settings',
-            to: '/mercato',
-            active: false,
-        },
-        {
-            id: 4,
-            name: 'Other',
-            to: '/mercato',
-            active: false,
-        }
     ];
 
     return {

@@ -28,8 +28,8 @@ class Player extends Component {
                 ultraPosition,
             }
         } = this.props;
+
         let positionMessage;
-        console.log(POSITIONS)
 
         switch (ultraPosition) {
             case POSITIONS.GOAL:
@@ -53,8 +53,8 @@ class Player extends Component {
             default:
                 positionMessage = 'Position inconnue au bataillon'
                 break;
-
         }
+
         return (
             <span>
                 {positionMessage}

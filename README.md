@@ -34,12 +34,14 @@ This page allows to quickly see the players who joined / left the league.
 
 This page allows to see the price evolution for players
 
+![Odds](screenshots/odds.png)
+
 #### Features
 
 - [ ] Select different dates ?
 - [ ] Display the evolution for a player
+- [ ] Filter players by club, or position ?
 - [ ] Search bar ?
-
 
 
 ## Dev

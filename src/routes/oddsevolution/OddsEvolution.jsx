@@ -1,32 +1,46 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import OddCard from 'components/oddcard/OddCard.jsx';
+
 import './OddsEvolution.css';
 
 
 class OddsEvolution extends Component {
     static propTypes = {
-        playerList: PropTypes.array,
+        players: PropTypes.array,
     };
 
-    renderPlayerList = () => {
-        const { playerList } = this.props;
+    componentDidMount() {
+        const { fetchPlayersOdds } = this.props;
+        fetchPlayersOdds();
+    }
 
-        if (playerList.length === 0) {
+    renderPlayers = () => {
+        const { players } = this.props;
+
+        if (players.length === 0) {
             return <span>No players</span>
         }
 
-        // return playerList.map(player => {
-        //     return <
-        // })
+        return players.map(player => {
+            return (
+                <OddCard
+                    name={player.name}
+                    oldQuotation={player.oldQuotation}
+                    newQuotation={player.newQuotation}
+                    club={player.club}
+                />
+            );
+        })
     }
 
     render() {
         return (
             <div className='OddsEvolution'>
                 <h1>Evolution côtes</h1>
-                <div className='Odds-evolution'>
-                    {this.renderPlayerList()}
+                <div className='OddsEvolution-list'>
+                    {this.renderPlayers()}
                 </div>
             </div>
         );

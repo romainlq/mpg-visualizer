@@ -33,21 +33,20 @@ const fetchPlayersError = (error) => {
 /** ODDS */
 const fetchPlayersOddsStart = () => {
     return {
-        type: PLAYERS.FETCH_PLAYERS_START,
+        type: PLAYERS.FETCH_PLAYERS_ODDS_START,
     }
 }
 
-const fetchPlayersOddsSuccess = (oldPlayers, newPlayers) => {
+const fetchPlayersOddsSuccess = (players) => {
     return {
-        type: PLAYERS.FETCH_PLAYERS_SUCCESS,
-        oldPlayers,
-        newPlayers,
+        type: PLAYERS.FETCH_PLAYERS_ODDS_SUCCESS,
+        players,
     }
 }
 
 const fetchPlayersOddsError = (error) => {
     return {
-        type: PLAYERS.FETCH_PLAYERS_ERROR,
+        type: PLAYERS.FETCH_PLAYERS_ODDS_ERROR,
         error,
     };
 }
@@ -72,17 +71,58 @@ export const fetchPlayers = () => {
     };
 }
 
+const formatPlayersWithOdds = (oldPlayers, newPlayers) => {
+    const formattedPlayers = [];
+    /**
+     * 1 - On parcourt les nouveaux
+     * 2 - Pour chaque nouveau, on regarde si il est dans les anciens
+     * 3 - Si oui, on prend le prix nouveau, le prix ancien, le nom, et on l'ajoute aux formattedPlayers
+     * */
+    newPlayers.forEach(newPlayer => {
+        const oldValuePlayer = oldPlayers.find(player => player.id === newPlayer.id);
+        if (oldValuePlayer) {
+            if (oldValuePlayer.quotation !== newPlayer.quotation) {
+                if (oldValuePlayer.quotation === 13 || newPlayer.quotation === 13) {
+                    console.log(newPlayer)
+                }
+
+                let name = '';
+                if (newPlayer.firstname) {
+                    name += newPlayer.firstname;
+                }
+                if (newPlayer.lastname) {
+                    name += ' ' + newPlayer.lastname;
+                }
+
+                const player = {
+                    name,
+                    newQuotation: newPlayer.quotation,
+                    oldQuotation: oldValuePlayer.quotation,
+                    club: newPlayer.club,
+                    position: newPlayer.position,
+                };
+                formattedPlayers.push(player);
+            }
+        }
+    });
+
+    return formattedPlayers;
+}
+
 export const fetchPlayersOdds = () => {
-    return (dispatch) => {
+    return async dispatch => {
         dispatch(fetchPlayersOddsStart());
 
-        return getOldPlayers()
-            .then((data) => {
-                console.log(data);
-                return dispatch(fetchPlayersOddsSuccess(data));
-            })
-            .catch((err) => {
-                return dispatch(fetchPlayersOddsError(err));
-            });
-    }
+        try {
+            const oldPlayers = await getOldPlayers();
+            const newPlayers = await getNewPlayers();
+
+            let players = formatPlayersWithOdds(oldPlayers, newPlayers);
+            players = players.sort((playerA, playerB) => playerB.newQuotation - playerA.newQuotation)
+
+            return dispatch(fetchPlayersOddsSuccess(players));
+        } catch (error) {
+            return dispatch(fetchPlayersOddsError(error));
+        }
+    };
 }
